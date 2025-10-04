@@ -1,79 +1,94 @@
 import requests
 import urllib.parse
 import time
-
-# Extended query (without LIMIT/OFFSET)
-BASE_QUERY = """
-SELECT ?person ?personLabel ?article 
-       ?birthDate ?deathDate 
-       ?placeOfBirthLabel ?placeOfDeathLabel 
-       ?causeOfDeath ?causeOfDeathLabel
-       ?citizenshipLabel ?occupationLabel ?genderLabel 
-       ?coords
-WHERE {
-  ?person wdt:P31 wd:Q5.                # humans
-  ?person wdt:P509 ?causeOfDeath.       # cause of death
-  ?article schema:about ?person ;
-           schema:isPartOf <https://en.wikipedia.org/> .
-
-  OPTIONAL { ?person wdt:P569 ?birthDate. }
-  OPTIONAL { ?person wdt:P570 ?deathDate. }
-  OPTIONAL { ?person wdt:P19 ?placeOfBirth. }
-  OPTIONAL { ?person wdt:P20 ?placeOfDeath. }
-  OPTIONAL { ?person wdt:P27 ?citizenship. }
-  OPTIONAL { ?person wdt:P106 ?occupation. }
-  OPTIONAL { ?person wdt:P21 ?gender. }
-  OPTIONAL { ?person wdt:P19/wdt:P625 ?coords. }  # coordinates of birthplace if available
-
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
-}
-"""
+import csv
 
 ENDPOINT_URL = "https://query.wikidata.org/sparql"
-BATCH_SIZE = 5000
+BATCH_SIZE = 5000  # adjust if needed
+OUTPUT_FILE = "humans_filtered.csv"
+
+# QIDs to exclude (disease/cancer-related causes)
+EXCLUDE_QIDS = [
+    "Q12136",  # cancer
+    "Q11950",  # myocardial infarction
+    "Q11641",  # traffic collision
+    "Q12140",  # stroke
+    "Q12141",  # lung cancer
+    "Q12142",  # tuberculosis
+    "Q12143",  # heart failure
+    "Q12144",  # leukemia
+    "Q12145",  # pancreatic cancer
+    "Q12146",  # cerebral hemorrhage
+    "Q12147",  # colorectal cancer
+    "Q12148",  # prostate cancer
+    "Q12149",  # cardiovascular disease
+]
+
+# Convert to SPARQL VALUES format
+exclude_values = ", ".join(f"wd:{qid}" for qid in EXCLUDE_QIDS)
+
+BASE_QUERY = f"""
+SELECT ?person ?personLabel ?causeOfDeath ?causeOfDeathLabel
+WHERE {{
+  ?person wdt:P31 wd:Q5.  # human
+  ?person wdt:P509 ?causeOfDeath.  # cause of death
+
+  # Exclude disease/cancer causes
+  FILTER(?causeOfDeath NOT IN ({exclude_values}))
+
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+}}
+LIMIT {BATCH_SIZE}
+OFFSET {{offset}}
+"""
 
 def fetch_batch(offset):
-    query = BASE_QUERY + f"\nLIMIT {BATCH_SIZE}\nOFFSET {offset}"
+    query = BASE_QUERY.replace("{offset}", str(offset))
     url = ENDPOINT_URL + "?query=" + urllib.parse.quote(query)
     headers = {"Accept": "text/csv"}
-    r = requests.get(url, headers=headers)
+    r = requests.get(url, headers=headers, timeout=60)
     r.raise_for_status()
     return r.text
 
 def main():
-    output_file = "humans_causes_of_death_full.csv"
     offset = 0
     first_batch = True
 
-    with open(output_file, "w", newline="", encoding="utf-8") as f_out:
+    with open(OUTPUT_FILE, "w", newline="", encoding="utf-8") as f_out:
+        writer = None
+
         while True:
             print(f"Fetching rows {offset}–{offset+BATCH_SIZE} ...")
             try:
-                batch_csv = fetch_batch(offset)
-            except Exception as e:
-                print("Error fetching batch, retrying after 10s:", e)
+                csv_data = fetch_batch(offset)
+            except requests.exceptions.RequestException as e:
+                print(f"Error fetching batch: {e}. Retrying in 10s...")
                 time.sleep(10)
                 continue
 
-            lines = batch_csv.strip().split("\n")
-
-            # Stop if no results
-            if len(lines) <= 1:
+            lines = csv_data.strip().split("\n")
+            if len(lines) <= 1:  # no results
                 print("No more results. Done!")
                 break
 
-            # Write header only for the first batch
+            # Initialize CSV writer with headers
             if first_batch:
-                f_out.write(batch_csv)
+                reader = csv.DictReader(lines)
+                writer = csv.DictWriter(f_out, fieldnames=reader.fieldnames)
+                writer.writeheader()
                 first_batch = False
             else:
-                # Skip header row
-                f_out.write("\n".join(lines[1:]) + "\n")
+                lines = lines[1:]  # skip header for subsequent batches
+                reader = csv.DictReader(lines, fieldnames=writer.fieldnames)
+
+            # Write rows
+            for row in reader:
+                writer.writerow(row)
 
             offset += BATCH_SIZE
-            time.sleep(1)  # be kind to the server
+            time.sleep(1)  # be kind to Wikidata
 
-    print(f"✅ Saved all results to {output_file}")
+    print(f"✅ Saved filtered data to {OUTPUT_FILE}")
 
 if __name__ == "__main__":
     main()
