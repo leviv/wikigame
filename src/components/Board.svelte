@@ -266,6 +266,16 @@
 {/if}
 
 <style>
+  @font-face {
+    font-family: "Libertine";
+    font-style: normal;
+    font-weight: 400;
+    src:
+      url("./LinLibertine_aDRS.ttf") format("truetype"),
+      url("/LinLibertine_aDRS.ttf") format("truetype");
+    font-display: swap;
+  }
+
   .hero {
     display: flex;
     justify-content: center;
@@ -273,13 +283,17 @@
     padding: 10px;
     border-style: solid;
     border-width: 10px 10px 10px 10px;
-    border-image: url(border.svg) 10 10 10 10 stretch stretch;
+    border-image: url("border.svg") 10 10 10 10 stretch stretch;
     flex: 1;
   }
 
   .hero img {
     height: 200px;
     margin-right: 50px;
+  }
+
+  .hero h1 {
+    font-family: "Libertine", serif;
   }
 
   .streak-container {
@@ -598,6 +612,7 @@
   }
 
   .answer-title {
+    font-family: "Libertine", serif;
     font-size: 1.5rem;
     margin: 0 0 1rem 0;
     color: #333;
