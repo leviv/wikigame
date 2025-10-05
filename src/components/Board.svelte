@@ -169,7 +169,7 @@
     {#if imageUrl}
       <Draggable width={600} height={200} contentKey={person.person}>
         <div class="picture-wrapper">
-          <img src="/frame.png" class="frame" alt="frame" />
+          <img src="frame.png" class="frame" alt="frame" />
           <img
             src={imageUrl}
             alt={person.personLabel}
@@ -270,9 +270,7 @@
     font-family: "Libertine";
     font-style: normal;
     font-weight: 400;
-    src:
-      url("./LinLibertine_aDRS.ttf") format("truetype"),
-      url("/LinLibertine_aDRS.ttf") format("truetype");
+    src: url("/LinLibertine_aDRS.ttf") format("truetype");
     font-display: swap;
   }
 
@@ -283,7 +281,7 @@
     padding: 10px;
     border-style: solid;
     border-width: 10px 10px 10px 10px;
-    border-image: url("border.svg") 10 10 10 10 stretch stretch;
+    border-image: url("/border.svg") 10 10 10 10 stretch stretch;
     flex: 1;
   }
 
@@ -419,14 +417,14 @@
     font-size: 30px;
     margin-top: 0px;
     padding: 35px 45px;
-    background-image: url("paper.png");
+    background-image: url("/paper.png");
     background-size: 100% 100%;
   }
 
   .board {
     width: 100%;
     min-height: 600px;
-    background-image: url("board.png");
+    background-image: url("/board.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
@@ -549,7 +547,7 @@
     align-items: center;
     border-style: solid;
     border-width: 10px 10px 10px 10px;
-    border-image: url("button.svg") 10 10 10 10 stretch stretch;
+    border-image: url("/button.svg") 10 10 10 10 stretch stretch;
     background: white;
     font-family: "Caveat", cursive;
     font-size: 26px;
@@ -561,7 +559,7 @@
   button {
     border-style: solid;
     border-width: 10px 10px 10px 10px;
-    border-image: url("button.svg") 10 10 10 10 stretch stretch;
+    border-image: url("/button.svg") 10 10 10 10 stretch stretch;
     background: white;
     font-family: "Caveat", cursive;
     font-size: 26px;
@@ -611,7 +609,7 @@
     margin-right: auto;
     border-style: solid;
     border-width: 10px 10px 10px 10px;
-    border-image: url(border.svg) 10 10 10 10 stretch stretch;
+    border-image: url("/border.svg") 10 10 10 10 stretch stretch;
   }
 
   .answer-content {
