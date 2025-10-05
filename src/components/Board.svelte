@@ -287,6 +287,22 @@
     width: 100%;
   }
 
+  .current-streak-content {
+    position: absolute;
+    text-align: center;
+    color: black;
+    width: 100%;
+  }
+
+  .current-streak-content p {
+    font-size: 60px;
+    margin: 0;
+    letter-spacing: 32px;
+    text-align: right;
+    margin-top: 88px;
+    margin-right: 67px;
+  }
+
   .best-streak-wrapper {
     position: relative;
     width: calc(191px * 1.3);
