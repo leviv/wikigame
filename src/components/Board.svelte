@@ -205,9 +205,22 @@
 {#if !isLoading}
   <div class="options-container">
     <div class="options">
-      {#each deathOptions as death}
-        <button on:click={() => answer(death)}>{death}</button>
-      {/each}
+      <button on:click={() => answer(deathOptions[0])} class="button-container">
+        <img src="ghost.png" alt="ghost" />
+        {deathOptions[0]}
+      </button>
+      <button on:click={() => answer(deathOptions[1])} class="button-container">
+        <img src="zombie.png" alt="zombie" />
+        {deathOptions[1]}
+      </button>
+      <button on:click={() => answer(deathOptions[2])} class="button-container">
+        <img src="rip.png" alt="rip" />
+        {deathOptions[2]}
+      </button>
+      <button on:click={() => answer(deathOptions[3])} class="button-container">
+        <img src="skull.png" alt="skull" />
+        {deathOptions[3]}
+      </button>
     </div>
     {#if !showAnswer}
       <div class="options">
@@ -458,7 +471,9 @@
     gap: 20px;
   }
 
-  button {
+  button.button-container {
+    display: flex;
+    flex-direction: row;
     border-style: solid;
     border-width: 10px 10px 10px 10px;
     border-image: url("button.svg") 10 10 10 10 stretch stretch;
@@ -469,7 +484,26 @@
     border-radius: 5px;
   }
 
+  button {
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-image: url("button.svg") 10 10 10 10 stretch stretch;
+    background: white;
+    font-family: "Caveat", cursive;
+    font-size: 26px;
+  }
+
   button:hover {
+    background: #ddd;
+    cursor: pointer;
+  }
+
+  .button-container img {
+    height: 30px;
+    margin-right: 5px;
+  }
+
+  .button-container:hover {
     background: #ddd;
     cursor: pointer;
   }
@@ -495,14 +529,15 @@
   }
 
   .answer-section {
-    margin-top: 2rem;
-    padding: 1rem;
-    background: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-image: url(border.svg) 10 10 10 10 stretch stretch;
   }
 
   .answer-content {
