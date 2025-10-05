@@ -1,0 +1,740 @@
+8147 - gunshot wound
+2873 - hanging
+2784 - decapitation
+2100 - drowning
+1917 - execution by shooting
+1089 - death by burning
+ 917 - falling from height
+ 863 - decapitation by guillotine
+ 563 - aviation accident
+ 553 - execution
+ 542 - stabbing
+ 469 - struck by vehicle
+ 455 - aircraft crash
+ 431 - assassination
+ 417 - airstrike
+ 371 - poison
+ 350 - September 11 attacks
+ 340 - falling
+ 328 - stab wound
+ 327 - drug overdose
+ 311 - horse fall
+ 279 - blunt trauma
+ 235 - shot to the head
+ 228 - torture
+ 214 - bicycle accident
+ 196 - railway accident
+ 181 - hanged, drawn, quartered and decapitated
+ 178 - Smolensk air disaster
+ 157 - electrocution
+ 156 - Armenian Genocide
+ 142 - death in battle
+ 130 - lethal injection
+ 107 - explosive device
+ 106 - strangling
+  97 - motorcycle accident
+  96 - cyanide poisoning
+  91 - drone warfare
+  90 - execution by drowning
+  78 - burn
+  78 - deliberate murder
+  77 - animal attack
+  74 - starvation
+  69 - poisoning
+  65 - traumatic brain injury
+  64 - killing
+  62 - explosion
+  58 - firearm
+  53 - lynching
+  52 - political repression
+  52 - United Airlines Flight 175
+  52 - American Airlines Flight 77
+  50 - choking
+  50 - crucifixion
+  49 - died of wounds
+  49 - stoning
+  48 - suicide bombing
+  46 - train wreck
+  45 - disembowelment
+  45 - shipwrecking
+  43 - conflagration at the Bazar de la Charité
+  42 - asphyxiation
+  38 - combat
+  37 - murder victim
+  37 - smoke inhalation injury
+  37 - bombardment
+  36 - 1908 Messina earthquake
+  36 - hunger strike
+  35 - homicide by firearm
+  34 - flaying
+  34 - bomb attack
+  32 - death from scuba diving
+  32 - helicopter crash
+  31 - 1977 Vrancea earthquake
+  31 - gun violence
+  31 - American Airlines Flight 11
+  31 - strike
+  29 - seppuku
+  26 - duel
+  26 - disaster
+  26 - hypothermia
+  26 - avalanche
+  25 - mass shooting
+  24 - Battle of Calatafimi
+  23 - 1987 Hipercor bombing
+  23 - World War I
+  23 - mountaineering accident
+  22 - burned to death
+  22 - car bombing
+  22 - transport accident
+  21 - enforced disappearance
+  21 - mass murder
+  21 - lightning strike
+  20 - dismemberment
+  20 - alcohol intoxication
+  19 - snakebite
+  19 - wounded in action
+  19 - airplane crash
+  18 - bull goring
+  18 - hunger
+  18 - electrical injury
+  17 - extra-judicial killing
+  17 - summary execution
+  17 - public execution
+  17 - Spanish martyrs of the 20th century
+  17 - single-vehicle accident
+  17 - Black Death
+  17 - The Holocaust
+  16 - violent crime
+  16 - child abuse
+  16 - strangulation homicide
+  15 - aircraft shootdown
+  15 - fall from building
+  15 - death by torture
+  15 - police brutality
+  15 - November 2015 Paris attacks
+  15 - breaking wheel
+  14 - structure fire
+  14 - sinking
+  14 - Sabena OO-AUB Ostend crash
+  14 - trampling
+  14 - École Polytechnique massacre
+  14 - bullet
+  14 - military strike
+  14 - arson
+  14 - blast injury
+  14 - mid-air collision
+  13 - femicide
+  13 - Siege of Palermo
+  13 - gas chamber
+  13 - 2019 Ménaka helicopter crash
+  13 - wound
+  12 - collapse of the World Trade Center
+  12 - car bomb
+  12 - equestrian accident
+  12 - Plaza República Dominicana bombing
+  12 - 1991 Azerbaijani Mil Mi-8 shootdown
+  12 - Aerowagon disaster
+  11 - war
+  11 - genocide
+  11 - deliberate poisoning
+  11 - volcanic eruption
+  10 - death from explosion
+  10 - targeted killing by Israel
+  10 - hand grenade
+  10 - Second Siege of Ceuta
+  10 - shot to the chest
+  10 - decompression sickness
+  10 - shootout
+   9 - sword execution
+   9 - torture murder
+   9 - involuntary manslaughter
+   9 - tram accident
+   9 - ligature strangulation
+   9 - battery
+   9 - suicide by train
+   8 - spontaneous human combustion
+   8 - lost at sea
+   8 - beaten to death
+   8 - mortal wound
+   8 - landslide
+   8 - knife fight
+   8 - concentration camp
+   8 - shooting attack
+   8 - hunting accident
+   8 - Chinese alchemical elixir poisoning
+   8 - political murder
+   8 - tiger attack
+   8 - BASE jumping
+   7 - TABSO Flight 101
+   7 - 1993 Madrid bombings
+   7 - forced suicide
+   7 - chloroform
+   7 - Cherisy Viaduct Bombing
+   6 - bear attack
+   6 - capital punishment in China
+   6 - premature burial
+   6 - Space Shuttle Challenger disaster
+   6 - stabbing attack
+   6 - battlefield
+   6 - 1947 KLM Douglas DC-3 Copenhagen accident
+   6 - assisted suicide
+   6 - fall from horse
+   6 - 1995 Vallecas bombing
+   6 - Palmiry massacre
+   6 - aerial bomb
+   6 - Sabadell bombing
+   6 - assault
+   6 - execution method
+   6 - climbing accident
+   6 - killed by own invention
+   6 - 2004 Indian Ocean earthquake
+   6 - shell
+   6 - coal gas poisoning
+   6 - drive-by shooting
+   6 - fire
+   6 - rocket-propelled grenade
+   6 - hate crime
+   6 - suicide method
+   5 - voluntary euthanasia
+   5 - 1980 Zarautz attack
+   5 - 1980 Ispaster attack
+   5 - crushing
+   5 - 1992 Madrid bombing
+   5 - sports accident
+   5 - Air France Flight 447
+   5 - health problem
+   5 - police brutality in Iran
+   5 - ambush
+   5 - bicyclist hit by car
+   5 - waist chop
+   5 - 2023 Turkey–Syria earthquakes
+   5 - stab wound to the chest
+   5 - missile strike
+   5 - World War II
+   5 - Q110312928
+   5 - declared dead
+   5 - Titan submersible implosion
+   5 - maritime accident
+   5 - unintentional discharge
+   5 - martyrdom
+   5 - Quickfire
+   5 - July 1979 Madrid bombings
+   5 - impalement
+   5 - swimming accident
+   4 - Katyn massacre
+   4 - Aeroflot Flight 214
+   4 - derailment
+   4 - strychnine poisoning
+   4 - 1994 Genocide against Tutsi
+   4 - sports injury
+   4 - manslaughter
+   4 - St Nedelya Church assault
+   4 - earthquake
+   4 - crush injury
+   4 - gas explosion
+   4 - 1855 Ansei Edo earthquake
+   4 - massacre
+   4 - Korean Air Lines Flight 007 crash
+   4 - Aeroflot Flight 141
+   4 - Japan Air Lines Flight 123
+   4 - 1980 Markina attack
+   4 - Battle of Custoza
+   4 - complication of pregnancy, childbirth and the puerperium
+   4 - death by boiling
+   4 - Bombing of Sofia in World War II
+   4 - terrorism victim
+   4 - stillbirth
+   4 - shrapnel shell
+   4 - hydrocution
+   4 - 1889–1890 pandemic
+   4 - suicide by poisoning with drugs
+   4 - death by suffocation
+   4 - kidnapping
+   4 - The Station nightclub fire
+   4 - dog attack
+   4 - Kaprun disaster
+   4 - murder of Lasa and Zabala
+   4 - People's court
+   4 - 1991 Ranilla bombing
+   4 - inert gas asphyxiation
+   4 - honor killing
+   4 - aerial ramming
+   4 - tournament
+   4 - mining accident
+   4 - throat cutting
+   4 - traffic accident victim
+   4 - sinking of the RMS Titanic
+   4 - immolation
+   4 - chokehold
+   4 - suffocation
+   4 - suicide by sharp instrument
+   4 - beating with a stick
+   4 - impact
+   3 - Skirmish on the eve of Santa Maria de September
+   3 - pedestrian hit by train
+   3 - Moore High School crash
+   3 - health effects arising from the September 11 attacks
+   3 - cricket ball
+   3 - terrorist attack
+   3 - 1985 Mexico City earthquake
+   3 - charcoal-burning suicide
+   3 - maritime disaster
+   3 - capsizing
+   3 - Stalinist repressions in Azerbaijan
+   3 - aerial warfare
+   3 - Si 204D crash
+   3 - Plaza de Ramales bombing
+   3 - October 1978 Getxo attack
+   3 - Stalinism
+   3 - martyr
+   3 - coma
+   3 - Holocaust victim
+   3 - death in custody
+   3 - wolf attack
+   3 - Mutxamel bombing
+   3 - Rancho Chileno restaurant attack
+   3 - death march
+   3 - 1978 Finnish Air Force DC-3 crash
+   3 - Stalinist repression
+   3 - 1918 bombardment of Saint-Gervais-Saint-Protais
+   3 - surface-to-air missile
+   3 - mercury poisoning
+   3 - 2018 suicide bombing in Charikar
+   3 - 1980 eruption of Mount St. Helens
+   3 - 1940 Canberra air disaster
+   3 - 1988 Spitak earthquake
+   3 - shark attack
+   3 - 1975 Oñati bombing
+   3 - Jihlava air disaster
+   3 - 1945 loss of B-24 Liberator "Commando"
+   3 - execution by burning
+   3 - suicide car bombing
+   3 - tsunami
+   3 - Carcassonne and Trèbes attack
+   3 - Villa Castelli helicopter collision
+   2 - chemical burn
+   2 - Aero Flight 217
+   2 - death from lightning strike
+   2 - Paracuellos massacres
+   2 - Fire Burn
+   2 - ana-tsurushi
+   2 - 1987 Zaragoza military bus bombing
+   2 - 1945 Brindisi Expeditor crash
+   2 - aftermath of 1923 Great Kantō earthquake
+   2 - 2018 Puebla helicopter crash
+   2 - Sudden Death vulnerability
+   2 - deported French resistance
+   2 - 2017 Cambrils attack
+   2 - Battle of the Great Redan
+   2 - August 1942 Dunbeath Air Crash
+   2 - head-on collision
+   2 - slashing
+   2 - killed in flight accident
+   2 - death by bull horn
+   2 - Aeroflot Flight 415
+   2 - 2014 Virgin Galactic crash
+   2 - 2014 Jerusalem synagogue attack
+   2 - ditching
+   2 - Café Hillel bombing
+   2 - firing squad
+   2 - shot to the neck
+   2 - Pax airship disaster
+   2 - 1981 Pushkin Tu-104 crash
+   2 - Massacre of Piazzale Loreto
+   2 - Religious persecution in Spain during the Second Republic and the Spanish Civil War
+   2 - 2020 Calabasas helicopter crash
+   2 - gas leak
+   2 - Falling on a grenade
+   2 - fire fatality
+   2 - horse-drawn vehicle accident
+   2 - Rebellion of Ōshio Heihachirō
+   2 - drowned in bathtub
+   2 - Pakistan International Airlines Flight 705
+   2 - Richmond Theatre fire
+   2 - 2022 Bratislava shooting
+   2 - shot by the police
+   2 - Russian invasion of Ukraine
+   2 - 2001 Dartmouth College murders
+   2 - Category:People who died in Auschwitz concentration camp
+   2 - 2023 Calabria migrant boat disaster
+   2 - Chilivani massacre
+   2 - Ma’agan Disaster (1954)
+   2 - Battle of Telish
+   2 - 2023 Old Montreal fire
+   2 - UM Airlines Flight 4230
+   2 - rebellion of Ikuta Yorozu
+   2 - rockfall
+   2 - knife attack
+   2 - Kızıldere Incident
+   2 - buffalo attack
+   2 - personal watercraft-related accident
+   2 - Bukken Bruse disaster
+   2 - 2× MiG-21MFN crash
+   2 - peine forte et dure
+   2 - Battle of Adrianople
+   2 - Taiping Rebellion
+   2 - potassium cyanide
+   2 - Battle of the Little Bighorn
+   2 - burning of the Henry Clay
+   2 - Akō Incident
+   2 - 2011 Lokomotiv Yaroslavl air disaster
+   2 - extermination camp
+   2 - wildfire
+   2 - shot to the upper leg
+   2 - Battle of Jutland
+   2 - Detainees-Disappeared
+   2 - Battle of Trafalgar
+   2 - 2009 L'Aquila earthquake
+   2 - Voisin 10Bn.2 crash
+   2 - American Airlines Flight 191
+   2 - Israeli Air Force
+   2 - 1945 Bombing of Prague
+   2 - pyre
+   2 - 2021 Azerbaijani Mil Mi-17 crash
+   2 - Nepalese royal massacre
+   2 - Partnair Flight 394
+   2 - 2011 Tucson shooting
+   2 - cold weapon
+   2 - 1923 Great Kantō Earthquake
+   2 - Munich massacre
+   2 - Second Battle of Ypres
+   2 - machete
+   2 - Battle of Warksow
+   2 - Battle of Solferino
+   2 - burial
+   2 - Nazi concentration camp
+   2 - armed conflict
+   2 - 2006 Lebanon War
+   2 - explosive chemicals
+   2 - 2010 Haiti earthquake
+   2 - King David Hotel bombing
+   2 - Spanish Civil War
+   2 - artillery
+   2 - castration
+   2 - friendly fire
+   2 - Versailles rail accident
+   2 - dog bite
+   2 - improvised explosive device
+   1 - Malin massacre
+   1 - Resbalon
+   1 - Ovillers-la-Boisselle in World War I
+   1 - Steamship Pulaski disaster
+   1 - Imatra shooting
+   1 - vehicle ramming
+   1 - 360 Degrees Tower collapse
+   1 - 2015 Attock Suicide Attack
+   1 - alleged suicide
+   1 - traffic collision victim
+   1 - coal gas
+   1 - hydrocyanic acid
+   1 - poison gas
+   1 - Execution by firing squad at the Seelhorster cemetery in 1945
+   1 - lesbicide
+   1 - devoured by a monster
+   1 - First Battle of the Piave River
+   1 - nitric acid poisoning
+   1 - York Massacre
+   1 - shot to the leg
+   1 - 1919-1920 Pogroms in Ukraine
+   1 - flying bomb (V1/V2)
+   1 - Susuzluq explosion
+   1 - 2021 European floods
+   1 - 2021 South Moravia tornado
+   1 - grievous bodily harm with intent
+   1 - 2016 Brussels bombings
+   1 - Cárcel Modelo massacre
+   1 - 1861 Tooley Street fire
+   1 - Brussels Airport Terrorist Attack 2016
+   1 - 2016 Russian Defence Ministry Tupolev Tu-154 crash
+   1 - writ of execution
+   1 - October 2000 Madrid bombing
+   1 - 2018 Scottsdale spree shootings
+   1 - July 2020 Armenian–Azerbaijani clashes
+   1 - 2019 Sri Lanka bombings
+   1 - 2021 Israel–Palestine crisis
+   1 - Okechō Fire
+   1 - 2023 Kramatorsk restaurant missile strike
+   1 - Killed in Action
+   1 - Civa bus accident 2024 in Apacheta
+   1 - 1666 Takada earthquake
+   1 - enforced disappearances in Chile
+   1 - road cycling crashes
+   1 - Rotter kidnapping
+   1 - Plane collision at Visé
+   1 - Gun shot wounds
+   1 - cooked
+   1 - crowd crush
+   1 - perished in the Holocaust
+   1 - Jihad of Auderamem
+   1 - 2021 TAF AS532 crash
+   1 - Agulis Massacre
+   1 - phenol injection
+   1 - hemlock poisoning
+   1 - assassination victim
+   1 - Bombing of Brno in World War II
+   1 - Q93755357
+   1 - police violence
+   1 - 2020 Beirut explosions
+   1 - 2023 Taichung crane collapse
+   1 - Murder of Kim Ha-neul
+   1 - shell splinter
+   1 - shot in the back
+   1 - Azerbaijan Airlines Flight 8243
+   1 - Battle of Buzuluk
+   1 - 2024 Spain floods
+   1 - single-vehicle collision
+   1 - death by Russian roulette
+   1 - execution of Marcellus Williams
+   1 - 2023 Azerbaijani offensive in Nagorno-Karabakh
+   1 - 2023 University of Nevada, Las Vegas shooting
+   1 - Gaza war (2023–)
+   1 - paragliding crash
+   1 - Plane Accident
+   1 - fall out of a window
+   1 - industrial disaster
+   1 - victim of state-sponsored terrorism
+   1 - falling from a roof
+   1 - violent death
+   1 - snowmobile collision
+   1 - suicide
+   1 - domestic terrorist attack
+   1 - Ethiopian Airlines Flight 302 Crash
+   1 - bushfire
+   1 - 2018 Taean Thermal Power Plant Accident
+   1 - Abduction and killing of Nachshon Wachsman
+   1 - fatal dog attack
+   1 - Asasey hotel attack
+   1 - shot to the heart
+   1 - crash of airship Italia
+   1 - 2019–2021 Chilean protests
+   1 - Serhiivka missile strike
+   1 - Hawker Hurricane Mk. IV crash
+   1 - Killing of Percy Lapid
+   1 - 2023 Brovary helicopter crash
+   1 - Olenivka prison explosion
+   1 - fall injury
+   1 - aggravated assault
+   1 - fall from a balcony
+   1 - accidental injuries
+   1 - treefall
+   1 - stab wound to the abdomen
+   1 - Avia BH-3 crash
+   1 - 1908 Berlin rail accident
+   1 - hydrogen cyanide exposure
+   1 - atomic bombings of Hiroshima and Nagasaki
+   1 - Bombing of Darmstadt in World War II
+   1 - liquidation
+   1 - Nigerian Civil War
+   1 - Palace of Justice Siege
+   1 - racing
+   1 - American Airlines Flight 965
+   1 - Black Saturday bushfires
+   1 - dogfight
+   1 - military campaign
+   1 - June 2009 Washington Metro train collision
+   1 - Foz de Lumbier incident
+   1 - infanticide
+   1 - air warfare of World War II
+   1 - Beaver Wars
+   1 - mortar ammunition
+   1 - violence against LGBT people
+   1 - December murders
+   1 - Battle of Khaybar
+   1 - brazen bull
+   1 - Santa Cruz massacre
+   1 - Alaska Airlines Flight 261
+   1 - trial by combat
+   1 - detonation
+   1 - Biatorbágy Outrage
+   1 - Colgan Air Flight 3407
+   1 - TAM Airlines Flight 3054
+   1 - animal bite
+   1 - PS Lady Elgin
+   1 - LOT Polish Airlines Flight 007
+   1 - fish poisoning
+   1 - kidnapping of Aldo Moro
+   1 - acid attack
+   1 - Battle of Lowestoft
+   1 - Lod Airport massacre
+   1 - High Treason Incident
+   1 - Battle of Cape Spada
+   1 - naval battle
+   1 - Elliot Junction rail accident
+   1 - roadkill
+   1 - Lagny-Pomponne rail accident
+   1 - Gare de Lyon rail accident
+   1 - 1956 massacre at Kossuth tér
+   1 - 1906 Washington DC train wreck
+   1 - 1996 Croatia USAF CT-43 crash
+   1 - Norwalk rail accident
+   1 - Battle of the Lys
+   1 - projectile weapon
+   1 - mutilation
+   1 - mushroom poisoning
+   1 - judicial murder
+   1 - Battle of Milazzo
+   1 - attempted murder
+   1 - ethnic cleansing
+   1 - Battle of the Somme
+   1 - Bombing of Dresden
+   1 - dynamite
+   1 - Bombing of Tokyo
+   1 - human sacrifice
+   1 - 2002 Bali bombings
+   1 - 2009 Palma Nova bombing
+   1 - war crime
+   1 - combustion
+   1 - equestrianism
+   1 - sled
+   1 - Battle of Mellrichstadt
+   1 - robbery
+   1 - Helsingborg
+   1 - axe
+   1 - religion
+   1 - flood
+   1 - Battle of Waterloo
+   1 - natural disaster
+   1 - terrorism
+   1 - Chernobyl disaster
+   1 - surgery
+   1 - prison
+   1 - Battle of Marathon
+   1 - knife
+   1 - coup d'état
+   1 - Hippopotamus amphibius
+   1 - opium
+   1 - spear
+   1 - persecution of Jews
+   1 - skydiving
+   1 - unmanned aerial vehicle
+   1 - radiation burn
+   1 - cyberbullying
+   1 - Halifax explosion
+   1 - mochi
+   1 - sexual assault
+   1 - Battle of Laupen
+   1 - Far Eastern Air Transport Flight 103
+   1 - massacre of Lviv professors
+   1 - false imprisonment
+   1 - Bombing of Darwin
+   1 - Battle of Zborov
+   1 - Red Terror
+   1 - 1983 Beirut barracks bombing
+   1 - Air New Zealand Flight 901
+   1 - shooting sport
+   1 - Beast of Gévaudan
+   1 - 1906 San Francisco earthquake
+   1 - cremation
+   1 - Italo-Turkish War
+   1 - sniper
+   1 - insect-inflicted wound
+   1 - Battle of Franklin
+   1 - Hyvinkää shooting
+   1 - China Airlines Flight 611
+   1 - Sack of Rome, 1527
+   1 - Dünamünde Action
+   1 - decapitation strike
+   1 - 2015 Sousse attack
+   1 - Nidareid train disaster
+   1 - The Blitz
+   1 - Murazze di Vado train disaster
+   1 - Murdered Innocence
+   1 - King's Cross railway accident
+   1 - Sofia - Kardam train fire
+   1 - Kerns Hotel fire
+   1 - Lovettsville air disaster
+   1 - prisoner suicide
+   1 - scalding
+   1 - 2003 Shooting of Japanese Diplomats in Iraq
+   1 - Japan Airlines Flight 471
+   1 - mortar
+   1 - 1956 Amorgos earthquake
+   1 - effects of nuclear explosions on human health
+   1 - coyote attack
+   1 - dingo attack
+   1 - Goswick rail crash
+   1 - crocodile attack
+   1 - Imam Ali Mosque bombing
+   1 - Shin-Ōkubo Station accident
+   1 - Burnt alive
+   1 - 2014 Colchester murders
+   1 - 1988 Shanghai train collision
+   1 - Soldats morts à la guerre
+   1 - Marcinelle disaster
+   1 - 1980 Orio ambush
+   1 - casualties of the Russo-Ukrainian War
+   1 - Nagorno-Karabakh conflict
+   1 - Bombardment of Brussels
+   1 - self-poisoning
+   1 - Air Inter Flight 2611
+   1 - construction accident
+   1 - torpedo attack
+   1 - April 2015 Nepal earthquake
+   1 - satanic ritual
+   1 - 2018 Leicester City F.C. helicopter crash
+   1 - politician persecution
+   1 - 2019 Manbij bombing
+   1 - 1948 Beechcraft Model 18 disappearance
+   1 - Executions in the Chojnowskie Forests
+   1 - death from laughter
+   1 - train collision
+   1 - radiation injury
+   1 - bombing of Berlin in World War II
+   1 - Ilford rail crash
+   1 - strap cutting
+   1 - self cutting throat
+   1 - Battle of Cheoin
+   1 - 1958 Aviaco SNCASE Languedoc crash
+   1 - Walk
+   1 - Susurluk car crash
+   1 - axe murder
+   1 - political repression in the Soviet Union
+   1 - venom
+   1 - Aitrang rail accident
+   1 - misery
+   1 - To Die of Love
+   1 - Battle of Rossignol
+   1 - 1948 Ashgabat earthquake
+   1 - eruption of Mount Vesuvius in 79
+   1 - 1891 Nōbi earthquake
+   1 - sinking of the MS Estonia
+   1 - chemical weapon
+   1 - methanol poisoning
+   1 - occupational fatality
+   1 - Second Battle of Cobadin
+   1 - Armavia Flight 967
+   1 - death flight
+   1 - Lachine massacre
+   1 - time bomb
+   1 - 2009 attack on the Dutch royal family
+   1 - Malév Flight 240
+   1 - explosion of the powder magazine in Delft
+   1 - capital crime
+   1 - suicide by cop
+   1 - whale
+   1 - neglect
+   1 - punch
+   1 - Weesp train disaster
+   1 - passive euthanasia
+   1 - Battle of Mons-en-Pévèle
+   1 - 2004 Iraq KBR convoy ambush
+   1 - body cavity bomb
+   1 - Category:Racing drivers who died while racing
+   1 - 2005 Indian Institute of Science shooting
+   1 - 2008 Biggin Hill Cessna Citation crash
+   1 - Soham rail disaster
+   1 - state-assisted suicide
+   1 - aerial bombing of a city
+   1 - Battle of Tangier
+   1 - 2008 Mexico City Learjet crash
+   1 - atomic bombing of Nagasaki
+   1 - lust murder
+   1 - 2012 Sudan Antonov An-26 crash
+   1 - 2006 Madrid–Barajas Airport bombing
+   1 - aviation incident
+   1 - rib hanging on hook
+   1 - 1948 Australian National Airways DC-3 crash
+   1 - 1943 Tottori earthquake
+   1 - Battle of the Salween River
+   1 - under-barrel grenade launcher
