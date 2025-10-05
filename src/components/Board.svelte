@@ -124,9 +124,11 @@
 </script>
 
 <div class="streak-container">
-  <div class="streak-item">
-    <span class="streak-label">Current Streak:</span>
-    <span class="streak-value">{currentStreak}</span>
+  <div class="current-streak-wrapper">
+    <img src="clock.png" alt="clock" />
+    <div class="current-streak-content">
+      <p>{currentStreak}</p>
+    </div>
   </div>
   <div class="streak-item">
     <span class="streak-label">Best Streak:</span>
@@ -227,15 +229,76 @@
 {/if}
 
 <style>
+  .streak-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .current-streak-wrapper {
+    position: relative;
+    width: calc(196px * 1.3);
+    height: calc(150px * 1.3);
+    margin-left: 30px;
+    bottom: -20px;
+  }
+
+  .streak-label p {
+    position: absolute;
+    top: -50px;
+  }
+
+  .current-streak-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  .current-streak-content {
+    position: absolute;
+    text-align: center;
+    color: black;
+    width: 100%;
+  }
+
+  .current-streak-content p {
+    font-size: 60px;
+    margin: 0;
+    letter-spacing: 32px;
+    text-align: right;
+    margin-top: 86px;
+    margin-right: 67px;
+    -webkit-text-stroke: 1px white;
+  }
+
+  p {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+  }
+
   .intro {
     display: flex;
+    width: 100%;
     justify-content: center;
+    position: absolute;
+    font-size: 30px;
+    text-align: left;
+    color: black;
+    top: 45px;
+    padding: 0px 15px 0px 25px;
   }
 
   .question {
     width: fit-content;
+    font-family: "Caveat", cursive;
     font-size: 30px;
-    margin-top: 40px;
+    margin-top: 0px;
     padding: 35px 45px;
     background-image: url("paper.png");
     background-size: 100% 100%;
@@ -270,7 +333,7 @@
     text-align: left;
     color: black;
     top: 45px;
-    padding: 0px 15px 0px 15px;
+    padding: 0px 15px 0px 25px;
   }
 
   .birth-wrapper {
@@ -316,7 +379,8 @@
     text-align: center;
     color: gold;
     bottom: 5px;
-    right: 45px;
+    margin-right: 25px;
+    margin-left: 10px;
     padding: 0;
   }
 
@@ -442,41 +506,5 @@
 
   .next-button:hover {
     background: #0056b3;
-  }
-
-  .streak-container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .streak-item {
-    text-align: center;
-  }
-
-  .streak-label {
-    display: block;
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 0.25rem;
-  }
-
-  .streak-value {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-  }
-
-  .streak-value.best {
-    color: #007bff;
   }
 </style>
