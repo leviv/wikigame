@@ -11,12 +11,6 @@
 </svelte:head>
 
 <div class="game-container">
-  <h1>Wiki Mystery</h1>
-  <p>
-    Can you solve the mystery? This game pulls interesting Wikipedia causes of
-    death and gives you clues about how they died.
-  </p>
-
   <Board />
 </div>
 

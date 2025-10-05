@@ -72,7 +72,11 @@
     person = pickDiversePersonAndDeathType();
 
     imageUrl = await getImageFromWikidata(person.person);
-    wikiData = await getWikipediaSections(person.person);
+
+    // Start fetching Wikipedia data asynchronously without blocking
+    getWikipediaSections(person.person).then((data) => {
+      wikiData = data;
+    });
 
     console.log(wikiData);
 
@@ -136,6 +140,16 @@
     <img src="clock.png" alt="clock" />
     <div class="current-streak-content">
       <p>{currentStreak}</p>
+    </div>
+  </div>
+  <div class="hero">
+    <img src="logo.png" alt="Logo" />
+    <div class="intro-text">
+      <h1>Wiki Mystery</h1>
+      <p>
+        Can you solve the mystery? This game pulls interesting Wikipedia causes
+        of death.
+      </p>
     </div>
   </div>
   <div class="best-streak-wrapper">
@@ -252,10 +266,28 @@
 {/if}
 
 <style>
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-image: url(border.svg) 10 10 10 10 stretch stretch;
+    flex: 1;
+  }
+
+  .hero img {
+    height: 200px;
+    margin-right: 50px;
+  }
+
   .streak-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
+    min-height: 200px;
   }
 
   .current-streak-wrapper {
@@ -263,7 +295,10 @@
     width: calc(196px * 1.3);
     height: calc(150px * 1.3);
     margin-left: 30px;
-    bottom: -20px;
+    transform: rotate(-20deg);
+    align-self: flex-end;
+    left: -150px;
+    bottom: -40px;
   }
 
   .streak-label p {
@@ -306,10 +341,12 @@
   .best-streak-wrapper {
     position: relative;
     width: calc(191px * 1.3);
-    height: calc(131x * 1.3);
-    margin-left: 30px;
+    height: calc(131px * 1.3);
+    margin-right: 30px;
+    transform: rotate(20deg);
+    align-self: flex-end;
+    right: -150px;
     bottom: -60px;
-    right: -60px;
   }
 
   .best-streak-wrapper img {
@@ -567,13 +604,14 @@
   }
 
   .correct-answer {
-    font-size: 1.1rem;
+    font-size: 25px;
     margin: 1rem 0;
     color: #555;
   }
 
   .wikipedia-link {
     margin: 1rem 0;
+    font-size: 25px;
   }
 
   .wikipedia-link a {
