@@ -36,9 +36,6 @@
         deathTypeMap.get(causeOfDeath)!.push(death);
       }
     });
-    console.log(
-      `Created death type map with ${deathTypeMap.size} different death types`
-    );
   }
 
   function pickRandom<T>(arr: T[]): T {
@@ -54,7 +51,6 @@
     if (availableDeathTypes.length === 0) {
       usedDeathTypes.clear();
       availableDeathTypes.push(...Array.from(deathTypeMap.keys()));
-      console.log("Reset used death types for diversity");
     }
 
     // Pick a random unused death type
@@ -64,10 +60,6 @@
     // Pick a random person who died from this cause
     const peopleWithThisDeath = deathTypeMap.get(selectedDeathType)!;
     const selectedPerson = pickRandom(peopleWithThisDeath);
-
-    console.log(
-      `Selected death type: ${selectedDeathType} (${peopleWithThisDeath.length} people), Person: ${selectedPerson.personLabel}`
-    );
 
     return selectedPerson;
   }
@@ -107,6 +99,10 @@
   }
 
   function answer(selected: string) {
+    if (showAnswer) {
+      return;
+    }
+
     isCorrect = selected === person.causeOfDeathLabel;
 
     if (isCorrect) {
@@ -145,7 +141,7 @@
 
   {#if !isLoading}
     {#if imageUrl}
-      <Draggable left={50} top={100}>
+      <Draggable width={600} height={200} contentKey={person.person}>
         <div class="picture-wrapper">
           <img src="/frame.png" class="frame" alt="frame" />
           <img
@@ -158,9 +154,9 @@
       </Draggable>
     {/if}
 
-    <Draggable left={200} top={150}>
+    <Draggable width={700} height={400} contentKey={person.person}>
       <div class="birth-wrapper">
-        <img src="/birth_certificate.png" alt="Birth Certificate" />
+        <img src="birth_certificate.png" alt="Birth Certificate" />
         <div class="birth-content">
           <p>Born: {formatWikidataDate(person?.birthDate)}</p>
           <p>Gender: {person?.gender}</p>
@@ -168,9 +164,9 @@
       </div>
     </Draggable>
 
-    <Draggable left={400} top={200}>
+    <Draggable width={700} height={350} contentKey={person.person}>
       <div class="passport-wrapper">
-        <img src="/passport.png" alt="passport" />
+        <img src="passport.png" alt="passport" />
 
         <div class="passport-content">
           <p>Birthplace: {person?.placeOfBirth}</p>
@@ -179,9 +175,9 @@
       </div>
     </Draggable>
 
-    <Draggable left={600} top={250}>
+    <Draggable width={700} height={350} contentKey={person.person}>
       <div class="resume-wrapper">
-        <img src="/resume.png" alt="Resume" />
+        <img src="resume.png" alt="Resume" />
         <div class="resume-content">
           <p>Occupation: {person?.occupation.split("|").join(", ")}</p>
         </div>
@@ -241,14 +237,14 @@
     font-size: 30px;
     margin-top: 40px;
     padding: 35px 45px;
-    background-image: url("/paper.png");
+    background-image: url("paper.png");
     background-size: 100% 100%;
   }
 
   .board {
     width: 100%;
     min-height: 600px;
-    background-image: url("/board.png");
+    background-image: url("board.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
@@ -320,7 +316,8 @@
     text-align: center;
     color: gold;
     bottom: 5px;
-    padding: 0px 23px 0px 8px;
+    right: 45px;
+    padding: 0;
   }
 
   .picture-wrapper {
@@ -385,12 +382,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 20px;
     color: #333;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 2rem;
+    background: white;
+    padding: 15px 25px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   .answer-section {

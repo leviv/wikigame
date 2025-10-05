@@ -1,6 +1,10 @@
 <script lang="ts">
-  export let left = 100;
-  export let top = 100;
+  export let width = 100;
+  export let height = 100;
+  export let contentKey: any = null;
+
+  let left = Math.random() * width;
+  let top = Math.random() * height;
 
   let moving = false;
 
