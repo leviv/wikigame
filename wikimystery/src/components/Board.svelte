@@ -50,7 +50,9 @@
 </script>
 
 <div class="board">
-	<h2 class="question">What killed {person?.personLabel}?</h2>
+	<div class="intro">
+		<h2 class="question">What killed {person?.personLabel}?</h2>
+	</div>
 
 	{#if imageUrl}
 		<Draggable left={50} top={100}>
@@ -62,10 +64,12 @@
 	{/if}
 
 	<Draggable left={200} top={150}>
-		<div class="birth-certificate">
-			<h3>Birth Certificate</h3>
-			<p>Born: {formatWikidataDate(person?.birthDate)}</p>
-			<p>Gender: {person?.gender}</p>
+		<div class="birth-wrapper">
+			<img src="/birth_certificate.png" alt="Birth Certificate" />
+			<div class="birth-content">
+				<p>Born: {formatWikidataDate(person?.birthDate)}</p>
+				<p>Gender: {person?.gender}</p>
+			</div>
 		</div>
 	</Draggable>
 
@@ -81,9 +85,11 @@
 	</Draggable>
 
 	<Draggable left={600} top={250}>
-		<div class="resume">
-			<h3>Resume</h3>
-			<p>Occupation: {person?.occupation}</p>
+		<div class="resume-wrapper">
+			<img src="/resume.png" alt="Resume" />
+			<div class="resume-content">
+				<p>Occupation: {person?.occupation}</p>
+			</div>
 		</div>
 	</Draggable>
 
@@ -96,10 +102,17 @@
 </div>
 
 <style>
+	.intro {
+		display: flex;
+		justify-content: center;
+	}
+
 	.question {
-		font-size: 35px;
-		padding-top: 15px;
-		color: white;
+		width: fit-content;
+		font-size: 30px;
+		padding: 35px 45px;
+		background-image: url('/paper.png');
+		background-size: 100% 100%;
 	}
 
 	.board {
@@ -111,34 +124,50 @@
 		position: relative;
 	}
 
-	.birth-certificate,
-	.passport,
-	.resume {
-		background: white;
-		padding: 1rem;
-		border-radius: 8px;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-		border: 2px solid #ddd;
-		min-width: 200px;
-		max-width: 250px;
+	.resume-wrapper {
+		position: relative;
+		width: calc(134px * 1.5);
+		height: calc(183px * 1.5);
 	}
 
-	.birth-certificate h3,
-	.passport h3,
-	.resume h3 {
-		margin: 0 0 0.5rem 0;
-		color: #333;
-		font-size: 1.1rem;
-		border-bottom: 1px solid #eee;
-		padding-bottom: 0.25rem;
+	.resume-wrapper img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		pointer-events: none;
 	}
 
-	.birth-certificate p,
-	.passport p,
-	.resume p {
-		margin: 0.25rem 0;
-		color: #666;
-		font-size: 0.9rem;
+	.resume-content {
+		position: absolute;
+		text-align: left;
+		color: black;
+		top: 45px;
+		padding: 0px 15px 0px 15px;
+	}
+
+	.birth-wrapper {
+		position: relative;
+		width: calc(168px * 1.8);
+		height: calc(98px * 1.8);
+	}
+
+	.birth-wrapper img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		pointer-events: none;
+	}
+
+	.birth-content {
+		position: absolute;
+		text-align: left;
+		color: black;
+		bottom: 5px;
+		padding: 0px 25px 0px 25px;
 	}
 
 	.passport-wrapper {
@@ -180,9 +209,9 @@
 	}
 
 	.picture {
-		padding: 40px;
-		width: calc(100% - 80px);
-		height: calc(100% - 80px);
+		padding: 30px;
+		width: calc(100% - 60px);
+		height: calc(100% - 60px);
 		object-fit: cover;
 	}
 
