@@ -293,7 +293,12 @@
   }
 
   .hero h1 {
+    margin-top: 0;
     font-family: "Libertine", serif;
+  }
+
+  .hero p {
+    margin-bottom: 0;
   }
 
   .streak-container {
@@ -377,14 +382,14 @@
     text-align: center;
     color: black;
     width: 100%;
-    bottom: 50px;
+    bottom: 35px;
   }
 
   .best-streak-content p {
     font-size: 60px;
     margin: 0;
     text-align: center;
-    margin-top: 86px;
+    margin-top: 96px;
     margin-right: 47px;
   }
 
@@ -541,6 +546,7 @@
   button.button-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
     border-style: solid;
     border-width: 10px 10px 10px 10px;
     border-image: url("button.svg") 10 10 10 10 stretch stretch;
@@ -549,6 +555,7 @@
     font-size: 26px;
     text-transform: capitalize;
     border-radius: 5px;
+    text-align: left;
   }
 
   button {
@@ -567,7 +574,7 @@
 
   .button-container img {
     height: 30px;
-    margin-right: 5px;
+    margin-right: 8px;
   }
 
   .button-container:hover {
