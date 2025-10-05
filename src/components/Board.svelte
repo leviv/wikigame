@@ -115,6 +115,14 @@
     }
 
     showAnswer = true;
+
+    setTimeout(() => {
+      // Scroll to the answer section
+      const answerSection = document.querySelector(".answer-section");
+      if (answerSection) {
+        answerSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
   }
 
   onMount(async () => {
@@ -130,9 +138,11 @@
       <p>{currentStreak}</p>
     </div>
   </div>
-  <div class="streak-item">
-    <span class="streak-label">Best Streak:</span>
-    <span class="streak-value best">{bestStreak}</span>
+  <div class="best-streak-wrapper">
+    <img src="high_score.png" alt="high score" />
+    <div class="best-streak-content">
+      <p>{bestStreak}</p>
+    </div>
   </div>
 </div>
 
@@ -264,14 +274,38 @@
     width: 100%;
   }
 
-  .current-streak-content p {
+  .best-streak-wrapper {
+    position: relative;
+    width: calc(191px * 1.3);
+    height: calc(131x * 1.3);
+    margin-left: 30px;
+    bottom: -60px;
+    right: -60px;
+  }
+
+  .best-streak-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  .best-streak-content {
+    position: absolute;
+    text-align: center;
+    color: black;
+    width: 100%;
+    bottom: 50px;
+  }
+
+  .best-streak-content p {
     font-size: 60px;
     margin: 0;
-    letter-spacing: 32px;
-    text-align: right;
+    text-align: center;
     margin-top: 86px;
-    margin-right: 67px;
-    -webkit-text-stroke: 1px white;
+    margin-right: 47px;
   }
 
   p {
@@ -333,7 +367,7 @@
     text-align: left;
     color: black;
     top: 45px;
-    padding: 0px 15px 0px 25px;
+    padding: 0px 25px 0px 20px;
   }
 
   .birth-wrapper {
@@ -384,6 +418,11 @@
     padding: 0;
   }
 
+  .passport-content p {
+    margin: 10px 6px;
+    font-size: 19px;
+  }
+
   .picture-wrapper {
     position: relative;
     width: 300px;
@@ -420,17 +459,19 @@
   }
 
   button {
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    background: #eee;
-    font-size: 1rem;
-    transition: background 0.2s;
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-image: url("button.svg") 10 10 10 10 stretch stretch;
+    background: white;
+    font-family: "Caveat", cursive;
+    font-size: 26px;
+    text-transform: capitalize;
+    border-radius: 5px;
   }
 
   button:hover {
     background: #ddd;
+    cursor: pointer;
   }
 
   h2 {
@@ -496,15 +537,7 @@
     text-decoration: underline;
   }
 
-  .next-button {
-    background: #007bff;
-    color: white;
-    font-size: 1.1rem;
-    padding: 0.75rem 1.5rem;
-    margin-top: 1rem;
-  }
-
   .next-button:hover {
-    background: #0056b3;
+    background: #bdddff;
   }
 </style>
