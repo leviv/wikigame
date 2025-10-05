@@ -12,12 +12,10 @@
 
 <div class="game-container">
 	<h1>Wiki Mystery</h1>
-
-	<div class="stats">
-		<p>Game ID: 1234</p>
-		<p>Time: 30s</p>
-		<p>Score: 1234</p>
-	</div>
+	<p>
+		Can you solve the mystery? This game pulls interesting Wikipedia causes of death and gives you
+		clues about how they died.
+	</p>
 
 	<Board />
 </div>
@@ -27,10 +25,5 @@
 		max-width: 1000px;
 		margin: 0 auto;
 		padding: 15px;
-	}
-	.stats {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
 	}
 </style>
