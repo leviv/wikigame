@@ -253,10 +253,16 @@
       <p class="correct-answer">
         The correct answer was: <strong>{person.causeOfDeathLabel}</strong>
       </p>
-      {#if wikiData?.url}
+      {#if wikiData?.url || person.person}
         <p class="wikipedia-link">
-          <a href={wikiData.url} target="_blank" rel="noopener noreferrer">
-            Read more about {person.personLabel} on Wikipedia →
+          <a
+            href={wikiData ? wikiData.url : person.person}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Read more about {person.personLabel} on {wikiData
+              ? "Wikipedia"
+              : "Wikidata"} →
           </a>
         </p>
       {/if}

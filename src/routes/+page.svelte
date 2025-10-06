@@ -21,10 +21,19 @@
       <a href="https://leviv.cool" target="_blank" rel="noopener noreferrer"
         >Levi</a
       >
-      and
+      with icons from
       <a href="https://lyuu.cc/" target="_blank" rel="noopener noreferrer"
         >Lucy</a
-      > for Wiki Game Jam 2025 in Brooklyn, NY.
+      >
+      for
+      <a
+        href="https://wikigamejam.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        WIKIGAMEJAM 2025
+      </a>
+      in Brooklyn, NY.
     </p>
     <p>&copy; 2025</p>
   </div>
