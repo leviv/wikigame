@@ -31,7 +31,7 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        WIKIGAMEJAM 2025
+        WikiGameJam 2025
       </a>
       in Brooklyn, NY.
     </p>
